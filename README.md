@@ -9,5 +9,5 @@ It builds the following roms:
 
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
-Add Physical/Special Split
+Physical/Special Split Already Added
 # DefinitiveCrystal
