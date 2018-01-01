@@ -161,7 +161,7 @@ Moves: ; 41afb
 	move DIZZY_PUNCH,  EFFECT_CONFUSE_HIT,        70, NORMAL,   100, 10,  20, PHYSICAL
 	move SPORE,        EFFECT_SLEEP,               0, GRASS,    100, 15,   0, STATUS
 	move FLASH,        EFFECT_ACCURACY_DOWN,       0, NORMAL,    70, 20,   0, STATUS
-	move PSYWAVE,      EFFECT_PSYWAVE,             1, PSYCHIC,   80, 15,   0, SPECIAL
+	move DRAGON_DANCE, EFFECT_DRAGON_DANCE,        0, DRAGON,   100, 20,   0, STATUS
 	move SPLASH,       EFFECT_SPLASH,              0, NORMAL,   100, 40,   0, STATUS
 	move ACID_ARMOR,   EFFECT_DEFENSE_UP_2,        0, POISON,   100, 40,   0, STATUS
 	move CRABHAMMER,   EFFECT_NORMAL_HIT,         90, WATER,     85, 10,   0, PHYSICAL

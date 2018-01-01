@@ -180,6 +180,7 @@ ENDM
 	command supereffectivelooptext  ; ad
 	command startloop               ; ae
 	command curl                    ; af
+	command dragondance             ; b0
 
 __enum__ set $fe
 

@@ -302,7 +302,7 @@ ShellderEggMoves:
 	db $ff
 
 GastlyEggMoves:
-	db PSYWAVE
+	db CONFUSION
 	db PERISH_SONG
 	db HAZE
 	db $ff
@@ -353,7 +353,7 @@ LickitungEggMoves:
 
 KoffingEggMoves:
 	db SCREECH
-	db PSYWAVE
+	db CONFUSION
 	db PSYBEAM
 	db DESTINY_BOND
 	db PAIN_SPLIT

@@ -147,7 +147,7 @@ MoveNames::
 	db "DIZZY PUNCH@"
 	db "SPORE@"
 	db "FLASH@"
-	db "PSYWAVE@"
+	db "DRAGON DANCE@"
 	db "SPLASH@"
 	db "ACID ARMOR@"
 	db "CRABHAMMER@"

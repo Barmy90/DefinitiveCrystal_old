@@ -148,7 +148,7 @@ MoveDescriptions:: ; 2cb52
 	dw DizzyPunchDescription
 	dw SporeDescription
 	dw FlashDescription
-	dw PsywaveDescription
+	dw DragonDanceDescription
 	dw SplashDescription
 	dw AcidArmorDescription
 	dw CrabhammerDescription
@@ -854,9 +854,9 @@ FlashDescription:
 	db   "Blinds the foe to"
 	next "reduce accuracy.@"
 
-PsywaveDescription:
-	db   "An attack with"
-	next "variable power.@"
+DragonDanceDescription:
+	db   "A mystical dance"
+	next "to heighten spirit.@"
 
 SplashDescription:
 	db   "Has no effect"

@@ -2073,3 +2073,10 @@ DefenseCurl:
 	statupmessage
 	statupfailtext
 	endmove
+
+DragonDance:
+	checkobedience
+	usedmovetext
+	doturn
+	dragondance
+	endmove

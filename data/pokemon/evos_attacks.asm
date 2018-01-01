@@ -2114,10 +2114,10 @@ CyndaquilEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
-	db 7, GYRO_BALL
-	db 7, BULLET_PUNCH
-	db 7, XSCISSOR
 	db 7, ROOST
+	db 8, BULLET_PUNCH
+	db 8, XSCISSOR
+	db 8, ROOST
 	db 8, FLASH_CANNON
 	db 46, FLAMETHROWER
 	db 0 ; no more level-up moves
@@ -2720,7 +2720,7 @@ SlowkingEvosAttacks:
 MisdreavusEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, GROWL
-	db 1, PSYWAVE
+	db 1, CONFUSION
 	db 6, SPITE
 	db 12, CONFUSE_RAY
 	db 19, MEAN_LOOK
