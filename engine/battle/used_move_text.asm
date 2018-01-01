@@ -256,7 +256,6 @@ MoveGrammar: ; 105e7a
 	db ABSORB
 	db STRING_SHOT
 	db EARTHQUAKE
-	db FISSURE
 	db DIG
 	db TOXIC
 	db SCREECH
@@ -264,7 +263,6 @@ MoveGrammar: ; 105e7a
 	db LICK
 	db CLAMP
 	db CONSTRICT
-	db POISON_GAS
 	db BUBBLE
 	db SLASH
 	db SPIDER_WEB

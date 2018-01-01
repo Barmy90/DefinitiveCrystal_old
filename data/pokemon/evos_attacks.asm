@@ -432,7 +432,7 @@ NidoranMEvosAttacks:
 	db 17, POISON_STING
 	db 23, FOCUS_ENERGY
 	db 30, FURY_ATTACK
-	db 38, HORN_DRILL
+	db 38, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 NidorinoEvosAttacks:
@@ -445,7 +445,7 @@ NidorinoEvosAttacks:
 	db 19, POISON_STING
 	db 27, FOCUS_ENERGY
 	db 36, FURY_ATTACK
-	db 46, HORN_DRILL
+	db 46, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 NidokingEvosAttacks:
@@ -453,8 +453,8 @@ NidokingEvosAttacks:
 	db 1, TACKLE
 	db 1, HORN_ATTACK
 	db 1, DOUBLE_KICK
-	db 1, POISON_STING
 	db 23, THRASH
+	db 44, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 ClefairyEvosAttacks:
@@ -657,7 +657,7 @@ DiglettEvosAttacks:
 	db 25, SAND_ATTACK
 	db 33, SLASH
 	db 41, EARTHQUAKE
-	db 49, FISSURE
+	db 49, ROCK_SLIDE
 	db 0 ; no more level-up moves
 
 DugtrioEvosAttacks:
@@ -674,7 +674,7 @@ endc
 	db 25, SAND_ATTACK
 	db 37, SLASH
 	db 49, EARTHQUAKE
-	db 61, FISSURE
+	db 61, ROCK_SLIDE
 	db 0 ; no more level-up moves
 
 MeowthEvosAttacks:
@@ -834,7 +834,7 @@ KadabraEvosAttacks:
 	db EVOLVE_TRADE, $ff, ALAKAZAM
 	db 0 ; no more evolutions
 	db 1, TELEPORT
-	db 1, KINESIS
+	db 1, FLASH
 	db 1, CONFUSION
 	db 16, CONFUSION
 	db 18, DISABLE
@@ -848,7 +848,7 @@ KadabraEvosAttacks:
 AlakazamEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TELEPORT
-	db 1, KINESIS
+	db 1, FLASH
 	db 1, CONFUSION
 	db 16, CONFUSION
 	db 18, DISABLE
@@ -954,7 +954,7 @@ TentacoolEvosAttacks:
 	db 19, ACID
 	db 25, BUBBLEBEAM
 	db 30, WRAP
-	db 36, BARRIER
+	db 36, REFLECT
 	db 43, SCREECH
 	db 49, HYDRO_PUMP
 	db 0 ; no more level-up moves
@@ -969,7 +969,7 @@ TentacruelEvosAttacks:
 	db 19, ACID
 	db 25, BUBBLEBEAM
 	db 30, WRAP
-	db 38, BARRIER
+	db 38, REFLECT
 	db 47, SCREECH
 	db 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
@@ -1183,7 +1183,7 @@ DewgongEvosAttacks:
 GrimerEvosAttacks:
 	db EVOLVE_LEVEL, 38, MUK
 	db 0 ; no more evolutions
-	db 1, POISON_GAS
+	db 1, ACID
 	db 1, POUND
 	db 5, HARDEN
 	db 10, DISABLE
@@ -1196,7 +1196,7 @@ GrimerEvosAttacks:
 
 MukEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POISON_GAS
+	db 1, ACID
 	db 1, POUND
 	db 1, HARDEN
 	db 33, HARDEN
@@ -1297,7 +1297,7 @@ DrowzeeEvosAttacks:
 	db 10, DISABLE
 	db 18, CONFUSION
 	db 25, HEADBUTT
-	db 31, POISON_GAS
+	db 31, ACID
 	db 36, MEDITATE
 	db 40, PSYCHIC_M
 	db 43, PSYCH_UP
@@ -1313,7 +1313,7 @@ HypnoEvosAttacks:
 	db 10, DISABLE
 	db 18, CONFUSION
 	db 25, HEADBUTT
-	db 33, POISON_GAS
+	db 33, ACID
 	db 40, MEDITATE
 	db 49, PSYCHIC_M
 	db 55, PSYCH_UP
@@ -1478,7 +1478,7 @@ LickitungEvosAttacks:
 KoffingEvosAttacks:
 	db EVOLVE_LEVEL, 35, WEEZING
 	db 0 ; no more evolutions
-	db 1, POISON_GAS
+	db 1, ACID
 	db 1, TACKLE
 	db 9, SMOG
 	db 17, SELFDESTRUCT
@@ -1491,7 +1491,7 @@ KoffingEvosAttacks:
 
 WeezingEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POISON_GAS
+	db 1, ACID
 	db 1, TACKLE
 	db 1, SMOG
 	db 1, SELFDESTRUCT
@@ -1512,7 +1512,7 @@ RhyhornEvosAttacks:
 	db 13, STOMP
 	db 19, FURY_ATTACK
 	db 31, SCARY_FACE
-	db 37, HORN_DRILL
+	db 37, DOUBLE_EDGE
 	db 49, TAKE_DOWN
 	db 55, EARTHQUAKE
 	db 0 ; no more level-up moves
@@ -1526,7 +1526,7 @@ RhydonEvosAttacks:
 	db 13, STOMP
 	db 19, FURY_ATTACK
 	db 31, SCARY_FACE
-	db 37, HORN_DRILL
+	db 37, DOUBLE_EDGE
 	db 54, TAKE_DOWN
 	db 65, EARTHQUAKE
 	db 0 ; no more level-up moves
@@ -1611,7 +1611,7 @@ GoldeenEvosAttacks:
 	db 24, FLAIL
 	db 29, FURY_ATTACK
 	db 38, WATERFALL
-	db 43, HORN_DRILL
+	db 43, DOUBLE_EDGE
 	db 52, AGILITY
 	db 0 ; no more level-up moves
 
@@ -1625,7 +1625,7 @@ SeakingEvosAttacks:
 	db 24, FLAIL
 	db 29, FURY_ATTACK
 	db 41, WATERFALL
-	db 49, HORN_DRILL
+	db 49, DOUBLE_EDGE
 	db 61, AGILITY
 	db 0 ; no more level-up moves
 
@@ -1655,7 +1655,7 @@ StarmieEvosAttacks:
 
 MrMimeEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BARRIER
+	db 1, MIMIC
 	db 6, CONFUSION
 	db 11, SUBSTITUTE
 	db 16, MEDITATE
@@ -2040,7 +2040,7 @@ MewtwoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CONFUSION
 	db 1, DISABLE
-	db 11, BARRIER
+	db 11, REFLECT
 	db 22, SWIFT
 	db 33, PSYCH_UP
 	db 44, FUTURE_SIGHT
@@ -2114,11 +2114,11 @@ CyndaquilEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
-	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 19, QUICK_ATTACK
-	db 27, FLAME_WHEEL
-	db 36, SWIFT
+	db 7, GYRO_BALL
+	db 7, BULLET_PUNCH
+	db 7, XSCISSOR
+	db 7, ROOST
+	db 8, FLASH_CANNON
 	db 46, FLAMETHROWER
 	db 0 ; no more level-up moves
 

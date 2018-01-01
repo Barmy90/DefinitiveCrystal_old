@@ -1299,7 +1299,7 @@ BattleCommand_Critical: ; 34631
 	ret
 
 .Criticals:
-	db KARATE_CHOP, RAZOR_WIND, RAZOR_LEAF, CRABHAMMER, SLASH, AEROBLAST, CROSS_CHOP, $ff
+	db KARATE_CHOP, RAZOR_LEAF, CRABHAMMER, SLASH, AEROBLAST, CROSS_CHOP, $ff
 .Chances:
 	; 6.25% 12.1% 24.6% 33.2% 49.6% 49.6% 49.6%
 	db $11,  $20,  $40,  $55,  $80,  $80,  $80
@@ -1818,8 +1818,8 @@ BattleCommand_CheckHit: ; 34d32
 
 
 .LockOn:
-; Return nz if we are locked-on and aren't trying to use Earthquake,
-; Fissure or Magnitude on a monster that is flying.
+; Return nz if we are locked-on and aren't trying to use Earthquake
+; or Magnitude on a monster that is flying.
 	ld a, BATTLE_VARS_SUBSTATUS5_OPP
 	call GetBattleVarAddr
 	bit SUBSTATUS_LOCK_ON, [hl]
@@ -1835,8 +1835,6 @@ BattleCommand_CheckHit: ; 34d32
 	call GetBattleVar
 
 	cp EARTHQUAKE
-	ret z
-	cp FISSURE
 	ret z
 	cp MAGNITUDE
 	ret z
@@ -1895,8 +1893,6 @@ BattleCommand_CheckHit: ; 34d32
 	call GetBattleVar
 
 	cp EARTHQUAKE
-	ret z
-	cp FISSURE
 	ret z
 	cp MAGNITUDE
 	ret
@@ -7360,9 +7356,6 @@ BattleCommand_Charge: ; 36b4d
 	start_asm
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
-	cp RAZOR_WIND
-	ld hl, .RazorWind
-	jr z, .done
 
 	cp SOLARBEAM
 	ld hl, .Solarbeam

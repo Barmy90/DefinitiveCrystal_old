@@ -18,7 +18,7 @@
 	const SCRATCH      ; 0a
 	const VICEGRIP     ; 0b
 	const GUILLOTINE   ; 0c
-	const RAZOR_WIND   ; 0d
+	const AIR_SLASH    ; 0d
 	const SWORDS_DANCE ; 0e
 	const CUT          ; 0f
 	const GUST         ; 10
@@ -37,7 +37,7 @@
 	const HEADBUTT     ; 1d
 	const HORN_ATTACK  ; 1e
 	const FURY_ATTACK  ; 1f
-	const HORN_DRILL   ; 20
+	const GYRO_BALL    ; 20
 	const TACKLE       ; 21
 	const BODY_SLAM    ; 22
 	const WRAP         ; 23
@@ -95,7 +95,7 @@
 	const THUNDER      ; 57
 	const ROCK_THROW   ; 58
 	const EARTHQUAKE   ; 59
-	const FISSURE      ; 5a
+	const BULLET_PUNCH ; 5a
 	const DIG          ; 5b
 	const TOXIC        ; 5c
 	const CONFUSION    ; 5d
@@ -117,7 +117,7 @@
 	const CONFUSE_RAY  ; 6d
 	const WITHDRAW     ; 6e
 	const DEFENSE_CURL ; 6f
-	const BARRIER      ; 70
+	const XSCISSOR     ; 70
 	const LIGHT_SCREEN ; 71
 	const HAZE         ; 72
 	const REFLECT      ; 73
@@ -139,12 +139,12 @@
 	const SPIKE_CANNON ; 83
 	const CONSTRICT    ; 84
 	const AMNESIA      ; 85
-	const KINESIS      ; 86
+	const ROOST        ; 86
 	const SOFTBOILED   ; 87
 	const HI_JUMP_KICK ; 88
 	const GLARE        ; 89
 	const DREAM_EATER  ; 8a
-	const POISON_GAS   ; 8b
+	const FLASH_CANNON ; 8b
 	const BARRAGE      ; 8c
 	const LEECH_LIFE   ; 8d
 	const LOVELY_KISS  ; 8e
@@ -257,11 +257,10 @@
 	const ROCK_SMASH   ; f9
 	const WHIRLPOOL    ; fa
 	const BEAT_UP      ; fb
+	const PETAL_STORM  ; fc
+	const FLARE_BLITZ  ; fd
+	const AQUA_JET     ; fe
 NUM_ATTACKS EQU const_value + -1
-
-	const MOVE_OR_ANIM_FC ; fc
-	const MOVE_OR_ANIM_FD ; fd
-	const MOVE_OR_ANIM_FE ; fe
 
 ; Battle animations use the same constants as the moves up to this point
 	const ANIM_SWEET_SCENT_2     ; ff

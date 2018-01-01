@@ -24,7 +24,6 @@ BulbasaurEggMoves:
 if !_CRYSTAL
 	db CHARM
 endc
-	db RAZOR_WIND
 	db PETAL_DANCE
 	db $ff
 
@@ -213,7 +212,7 @@ PoliwagEggMoves:
 AbraEggMoves:
 	db LIGHT_SCREEN
 	db ENCORE
-	db BARRIER
+	db REFLECT
 	db $ff
 
 MachopEggMoves:
@@ -297,7 +296,7 @@ GrimerEggMoves:
 ShellderEggMoves:
 	db BUBBLEBEAM
 	db TAKE_DOWN
-	db BARRIER
+	db REFLECT
 	db RAPID_SPIN
 	db SCREECH
 	db $ff
@@ -315,7 +314,7 @@ OnixEggMoves:
 
 DrowzeeEggMoves:
 	db LIGHT_SCREEN
-	db BARRIER
+	db REFLECT
 	db $ff
 
 KrabbyEggMoves:
@@ -410,7 +409,7 @@ GoldeenEggMoves:
 if !_CRYSTAL
 StaryuEggMoves:
 	db AURORA_BEAM
-	db BARRIER
+	db REFLECT
 	db SUPERSONIC
 	db $ff
 endc
@@ -425,7 +424,7 @@ ScytherEggMoves:
 	db COUNTER
 	db SAFEGUARD
 	db BATON_PASS
-	db RAZOR_WIND
+	db AIR_SLASH
 	db REVERSAL
 	db LIGHT_SCREEN
 	db $ff
@@ -509,7 +508,6 @@ TotodileEggMoves:
 	db THRASH
 	db HYDRO_PUMP
 	db ANCIENTPOWER
-	db RAZOR_WIND
 	db ROCK_SLIDE
 	db $ff
 
@@ -690,7 +688,6 @@ DunsparceEggMoves:
 GligarEggMoves:
 	db METAL_CLAW
 	db WING_ATTACK
-	db RAZOR_WIND
 	db COUNTER
 	db $ff
 
@@ -836,7 +833,7 @@ endc
 
 ElekidEggMoves:
 	db KARATE_CHOP
-	db BARRIER
+	db REFLECT
 	db ROLLING_KICK
 	db MEDITATE
 if _CRYSTAL
@@ -847,7 +844,7 @@ endc
 MagbyEggMoves:
 	db KARATE_CHOP
 	db MEGA_PUNCH
-	db BARRIER
+	db REFLECT
 	db SCREECH
 if _CRYSTAL
 	db CROSS_CHOP

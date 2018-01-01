@@ -1024,7 +1024,7 @@ BrockGroup:
 		db FURY_ATTACK
 		db SCARY_FACE
 		db EARTHQUAKE
-		db HORN_DRILL
+		db DOUBLE_EDGE
 
 	db 42, OMASTAR
 		db BITE
@@ -4003,7 +4003,7 @@ SabrinaGroup:
 		db PSYCHIC_M
 
 	db 46, MR__MIME
-		db BARRIER
+		db LIGHT_SCREEN
 		db REFLECT
 		db BATON_PASS
 		db PSYCHIC_M
@@ -6983,7 +6983,7 @@ PsychicGroup:
 
 	db 15, KADABRA
 		db TELEPORT
-		db KINESIS
+		db FLASH
 		db CONFUSION
 		db 0
 

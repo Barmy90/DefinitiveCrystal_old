@@ -12,7 +12,7 @@ MoveDescriptions:: ; 2cb52
 	dw ScratchDescription
 	dw VicegripDescription
 	dw GuillotineDescription
-	dw RazorWindDescription
+	dw AirSlashDescription
 	dw SwordsDanceDescription
 	dw CutDescription
 	dw GustDescription
@@ -31,7 +31,7 @@ MoveDescriptions:: ; 2cb52
 	dw HeadbuttDescription
 	dw HornAttackDescription
 	dw FuryAttackDescription
-	dw HornDrillDescription
+	dw GyroBallDescription
 	dw TackleDescription
 	dw BodySlamDescription
 	dw WrapDescription
@@ -89,7 +89,7 @@ MoveDescriptions:: ; 2cb52
 	dw ThunderDescription
 	dw RockThrowDescription
 	dw EarthquakeDescription
-	dw FissureDescription
+	dw BulletPunchDescription
 	dw DigDescription
 	dw ToxicDescription
 	dw ConfusionDescription
@@ -111,7 +111,7 @@ MoveDescriptions:: ; 2cb52
 	dw ConfuseRayDescription
 	dw WithdrawDescription
 	dw DefenseCurlDescription
-	dw BarrierDescription
+	dw XScissorDescription
 	dw LightScreenDescription
 	dw HazeDescription
 	dw ReflectDescription
@@ -133,12 +133,12 @@ MoveDescriptions:: ; 2cb52
 	dw SpikeCannonDescription
 	dw ConstrictDescription
 	dw AmnesiaDescription
-	dw KinesisDescription
+	dw RoostDescription
 	dw SoftboiledDescription
 	dw HiJumpKickDescription
 	dw GlareDescription
 	dw DreamEaterDescription
-	dw PoisonGasDescription
+	dw FlashCannonDescription
 	dw BarrageDescription
 	dw LeechLifeDescription
 	dw LovelyKissDescription
@@ -251,15 +251,13 @@ MoveDescriptions:: ; 2cb52
 	dw RockSmashDescription
 	dw WhirlpoolDescription
 	dw BeatUpDescription
-	dw MoveFCDescription
-	dw MoveFDDescription
+	dw PetalStormDescription
+	dw FlareBlitzDescription
 	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
 ; 2cd52
 
-MoveFCDescription:
-MoveFDDescription:
 MoveFEDescription:
 MoveFFDescription:
 Move00Description:
@@ -313,9 +311,9 @@ GuillotineDescription:
 	db   "A one-hit KO,"
 	next "pincer attack.@"
 
-RazorWindDescription:
-	db   "1st turn: Prepare"
-	next "2nd turn: Attack@"
+AirSlashDescription:
+	db   "High chance to"
+	next "flinch opponent.@"
 
 SwordsDanceDescription:
 	db   "A dance that in-"
@@ -389,9 +387,9 @@ FuryAttackDescription:
 	db   "Jabs the target"
 	next "2-5 times.@"
 
-HornDrillDescription:
-	db   "A one-hit KO,"
-	next "drill attack.@"
+GyroBallDescription:
+	db   "A high speed"
+	next "spinning tackle.@"
 
 TackleDescription:
 	db   "A full-body charge"
@@ -621,9 +619,9 @@ EarthquakeDescription:
 	db   "Tough but useless"
 	next "vs. flying foes.@"
 
-FissureDescription:
-	db   "A ground-type,"
-	next "one-hit KO attack.@"
+BulletPunchDescription:
+	db   "A fast punch"
+	next "with Steel fists.@"
 
 DigDescription:
 	db   "1st turn: Burrow"
@@ -709,9 +707,9 @@ DefenseCurlDescription:
 	db   "Heightens the"
 	next "user's DEFENSE.@"
 
-BarrierDescription:
-	db   "Sharply increases"
-	next "user's DEFENSE.@"
+XScissorDescription:
+	db   "A cutting attack"
+	next "using scythes.@"
 
 LightScreenDescription:
 	db   "Ups SPCL.DEF with"
@@ -797,9 +795,9 @@ AmnesiaDescription:
 	db   "Sharply raises the"
 	next "user's SPCL.DEF.@"
 
-KinesisDescription:
-	db   "Reduces the foe's"
-	next "accuracy.@"
+RoostDescription:
+	db   "Roosts to heal"
+	next "back health.@"
 
 SoftboiledDescription:
 	db   "Restores HP by 1/2"
@@ -817,9 +815,9 @@ DreamEaterDescription:
 	db   "Steals HP from a"
 	next "sleeping victim.@"
 
-PoisonGasDescription:
-	db   "A move that may"
-	next "poison the foe.@"
+FlashCannonDescription:
+	db   "A blinding flash"
+	next "of bright light.@"
 
 BarrageDescription:
 	db   "Throws orbs to hit"
@@ -1267,4 +1265,17 @@ WhirlpoolDescription:
 BeatUpDescription:
 	db   "Party #MON join"
 	next "in the attack.@"
+
+PetalStormDescription:
+	db   "A flurry of petals"
+	next "that lowers attack.@"
+
+FlareBlitzDescription:
+	db   "A fiery tackle"
+	next "that recoils.@"
+
+AquaJetDescription:
+	db   "A watery lunge"
+	next "that goes first.@"
+
 ; 2ed44
