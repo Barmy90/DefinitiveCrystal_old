@@ -46,45 +46,45 @@ JohtoWaterWildMons: ; 0x2b11d
 
 	map MOUNT_MORTAR_1F_OUTSIDE
 	db 4 percent ; encounter rate
-	db 15, GOLDEEN
+	db 15, MARILL
+	db 20, REMORAID
 	db 20, MARILL
-	db 20, SEAKING
 
 	map MOUNT_MORTAR_2F_INSIDE
 	db 2 percent ; encounter rate
-	db 20, GOLDEEN
-	db 25, MARILL
+	db 20, MARILL
+	db 25, GOLDEEN
 	db 25, SEAKING
 
 	map MOUNT_MORTAR_B1F
 	db 2 percent ; encounter rate
-	db 15, GOLDEEN
-	db 20, MARILL
+	db 15, MARILL
+	db 20, GOLDEEN
 	db 20, SEAKING
 
 	map WHIRL_ISLAND_SW
 	db 4 percent ; encounter rate
-	db 20, TENTACOOL
+	db 20, QWILFISH
 	db 15, HORSEA
-	db 20, TENTACRUEL
+	db 20, CORSOLA
 
 	map WHIRL_ISLAND_B2F
 	db 4 percent ; encounter rate
-	db 15, HORSEA
+	db 15, CORSOLA
 	db 20, HORSEA
-	db 20, TENTACRUEL
+	db 20, QWILFISH
 
 	map WHIRL_ISLAND_LUGIA_CHAMBER
 	db 4 percent ; encounter rate
 	db 20, HORSEA
-	db 20, TENTACRUEL
+	db 20, CORSOLA
 	db 20, SEADRA
 
 	map SILVER_CAVE_ROOM_2
 	db 2 percent ; encounter rate
 	db 35, SEAKING
 	db 35, GOLDUCK
-	db 35, GOLDEEN
+	db 35, AZUMARILL
 
 	map DARK_CAVE_VIOLET_ENTRANCE
 	db 2 percent ; encounter rate
@@ -124,9 +124,9 @@ JohtoWaterWildMons: ; 0x2b11d
 
 	map ROUTE_32
 	db 6 percent ; encounter rate
-	db 15, TENTACOOL
+	db 15, WOOPER
 	db 20, QUAGSIRE
-	db 20, TENTACRUEL
+	db 20, QWILFISH
 
 	map ROUTE_34
 	db 6 percent ; encounter rate
@@ -142,21 +142,21 @@ JohtoWaterWildMons: ; 0x2b11d
 
 	map ROUTE_40
 	db 6 percent ; encounter rate
-	db 20, TENTACOOL
-	db 15, TENTACOOL
-	db 20, TENTACRUEL
+	db 20, REMORAID
+	db 15, REMORAID
+	db 20, MANTINE
 
 	map ROUTE_41
 	db 6 percent ; encounter rate
-	db 20, TENTACOOL
-	db 20, TENTACRUEL
+	db 20, REMORAID
+	db 20, REMORAID
 	db 20, MANTINE
 
 	map ROUTE_42
 	db 4 percent ; encounter rate
+	db 20, MARILL
+	db 15, MARILL
 	db 20, GOLDEEN
-	db 15, GOLDEEN
-	db 20, SEAKING
 
 	map ROUTE_43
 	db 2 percent ; encounter rate
@@ -202,13 +202,13 @@ JohtoWaterWildMons: ; 0x2b11d
 
 	map OLIVINE_CITY
 	db 6 percent ; encounter rate
-	db 20, TENTACOOL
-	db 15, TENTACOOL
-	db 20, TENTACRUEL
+	db 20, REMORAID
+	db 15, REMORAID
+	db 20, OCTILLERY
 
 	map ECRUTEAK_CITY
 	db 2 percent ; encounter rate
-	db 20, POLIWAG
+	db 20, WOOPER
 	db 15, POLIWAG
 	db 20, POLIWHIRL
 
