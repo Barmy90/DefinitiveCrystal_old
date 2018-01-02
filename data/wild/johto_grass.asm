@@ -1627,7 +1627,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; morn
 	db 41, URSARING
 	db 42, MURKROW
-	db 42, GRABULL
+	db 42, GRANBULL
 	db 44, GRANBULL
 	db 41, QUAGSIRE
 	db 43, URSARING
@@ -1635,7 +1635,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; day
 	db 41, URSARING
 	db 42, MURKROW
-	db 42, GRABULL
+	db 42, GRANBULL
 	db 44, GRANBULL
 	db 41, QUAGSIRE
 	db 43, URSARING
