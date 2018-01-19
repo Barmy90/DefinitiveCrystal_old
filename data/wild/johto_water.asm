@@ -144,7 +144,7 @@ JohtoWaterWildMons: ; 0x2b11d
 	db 6 percent ; encounter rate
 	db 20, REMORAID
 	db 15, REMORAID
-	db 20, MANTINE
+	db 20, CHINCHOU
 
 	map ROUTE_41
 	db 6 percent ; encounter rate

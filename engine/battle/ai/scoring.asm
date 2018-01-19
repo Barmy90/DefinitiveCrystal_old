@@ -3112,6 +3112,7 @@ UsefulMoves: ; 39301
 	db FIRE_BLAST
 	db SOFTBOILED
 	db SUPER_FANG
+	db ROOST
 	db $ff
 ; 39315
 
@@ -3195,6 +3196,7 @@ AI_Opportunist: ; 39315
 	db CONVERSION
 	db SUBSTITUTE
 	db FLAME_WHEEL
+	db DRAGON_DANCE
 	db $ff
 ; 39369
 

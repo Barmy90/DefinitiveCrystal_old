@@ -276,10 +276,10 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	db 13, RATTATA
-	db 14, SPINARAK
+	db 14, SLUGMA
 	db 15, RATTATA
 	db 14, ZUBAT
-	db 15, RATTATA
+	db 15, SLUGMA
 	db 13, MAGBY
 	db 12, MAGBY
 	; day
@@ -1275,18 +1275,18 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 4, WOOPER
-	db 5, SENTRET
-	db 7, SUNKERN
+	db 5, SUNKERN
+	db 6, MAREEP
 	db 6, HOPPIP
 	db 7, SENTRET
-	db 7, HOPPIP
+	db 7, MAREEP
 	db 7, HOPPIP
 	; day
 	db 4, WOOPER
-	db 5, SENTRET
-	db 7, SUNKERN
+	db 5, SUNKERN
+	db 7, MAREEP
 	db 6, HOPPIP
-	db 7, SENTRET
+	db 7, MAREEP
 	db 7, HOPPIP
 	db 7, HOPPIP
 	; nite

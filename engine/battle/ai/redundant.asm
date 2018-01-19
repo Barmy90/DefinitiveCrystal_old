@@ -181,6 +181,7 @@ AI_Redundant: ; 2c41a
 	ret
 
 .Heal:
+.Roost
 .MorningSun:
 .Synthesis:
 .Moonlight: ; 2c539

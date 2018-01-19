@@ -19,21 +19,21 @@ FalknerGroup:
 
 	; FALKNER (1)
 	db "FALKNER@"
-	db TRAINERTYPE_MOVES
+	db TRAINERTYPE_ITEM_MOVES
 
 	; party
 
-	db 7, PIDGEY
+	db 7, HOOTHOOT, NO_ITEM
 		db TACKLE
 		db MUD_SLAP
-		db 0
-		db 0
+		db FORESIGHT
+		db HYPNOSIS
 
-	db 9, PIDGEOTTO
-		db TACKLE
+	db 9, MURKROW, BERRY
+		db PECK
 		db MUD_SLAP
-		db GUST
-		db 0
+		db PURSUIT
+		db ROOST
 
 	db $ff ; end
 
@@ -47,17 +47,17 @@ WhitneyGroup:
 
 	; WHITNEY (1)
 	db "WHITNEY@"
-	db TRAINERTYPE_MOVES
+	db TRAINERTYPE_ITEM_MOVES
 
 	; party
 
-	db 18, CLEFAIRY
-		db DOUBLESLAP
-		db MIMIC
-		db ENCORE
+	db 18, SNUBBULL, NO_ITEM
+		db TACKLE
+		db CHARM
+		db BITE
 		db METRONOME
 
-	db 20, MILTANK
+	db 20, MILTANK, BERRY
 		db ROLLOUT
 		db ATTRACT
 		db STOMP
@@ -75,27 +75,27 @@ BugsyGroup:
 
 	; BUGSY (1)
 	db "BUGSY@"
-	db TRAINERTYPE_MOVES
+	db TRAINERTYPE_ITEM_MOVES
 
 	; party
 
-	db 14, METAPOD
-		db TACKLE
-		db STRING_SHOT
-		db HARDEN
-		db 0
-
-	db 14, KAKUNA
-		db POISON_STING
-		db STRING_SHOT
-		db HARDEN
-		db 0
-
-	db 16, SCYTHER
+	db 14, YANMA, NO_ITEM
 		db QUICK_ATTACK
+		db DOUBLE_TEAM
+		db SWAGGER
+		db LEECH_LIFE
+
+	db 14, PINECO, NO_ITEM
+		db TACKLE
+		db PROTECT
+		db PIN_MISSILE
+		db SELFDESTRUCT
+
+	db 16, HERACROSS, BERRY
+		db HORN_ATTACK
 		db LEER
 		db FURY_CUTTER
-		db 0
+		db FLAIL
 
 	db $ff ; end
 
@@ -109,33 +109,33 @@ MortyGroup:
 
 	; MORTY (1)
 	db "MORTY@"
-	db TRAINERTYPE_MOVES
+	db TRAINERTYPE_ITEM_MOVES
 
 	; party
 
-	db 21, GASTLY
+	db 21, GASTLY, NO_ITEM
 		db LICK
 		db SPITE
 		db MEAN_LOOK
 		db CURSE
 
-	db 21, HAUNTER
-		db HYPNOSIS
-		db MIMIC
-		db CURSE
-		db NIGHT_SHADE
+	db 21, MISDREAVUS, NO_ITEM
+		db CONFUSION
+		db SPITE
+		db CONFUSE_RAY
+		db TOXIC
 
-	db 25, GENGAR
+	db 25, GENGAR, BERRY
 		db HYPNOSIS
 		db SHADOW_BALL
 		db MEAN_LOOK
 		db DREAM_EATER
 
-	db 23, HAUNTER
-		db SPITE
+	db 23, MISDREAVUS, NO_ITEM
+		db DESTINY_BOND
 		db MEAN_LOOK
-		db MIMIC
-		db NIGHT_SHADE
+		db DOUBLE_TEAM
+		db PERISH_SONG
 
 	db $ff ; end
 
@@ -149,23 +149,23 @@ PryceGroup:
 
 	; PRYCE (1)
 	db "PRYCE@"
-	db TRAINERTYPE_MOVES
+	db TRAINERTYPE_ITEM_MOVES
 
 	; party
 
-	db 27, SEEL
-		db HEADBUTT
+	db 27, LAPRAS, NO_ITEM
+		db RAIN_DANCE
+		db BODY_SLAM
 		db ICY_WIND
-		db AURORA_BEAM
-		db REST
+		db BUBBLEBEAM
 
-	db 29, DEWGONG
-		db HEADBUTT
-		db ICY_WIND
-		db AURORA_BEAM
-		db REST
+	db 29, SNEASEL, NO_ITEM
+		db SCREECH
+		db QUICK_ATTACK
+		db FAINT_ATTACK
+		db ICE_PUNCH
 
-	db 31, PILOSWINE
+	db 31, PILOSWINE, GOLD_BERRY
 		db ICY_WIND
 		db FURY_ATTACK
 		db MIST
@@ -183,25 +183,25 @@ JasmineGroup:
 
 	; JASMINE (1)
 	db "JASMINE@"
-	db TRAINERTYPE_MOVES
+	db TRAINERTYPE_ITEM_MOVES
 
 	; party
 
-	db 30, MAGNEMITE
+	db 30, MAGNETON, NO_ITEM
 		db THUNDERBOLT
 		db SUPERSONIC
 		db SONICBOOM
 		db THUNDER_WAVE
 
-	db 30, MAGNEMITE
-		db THUNDERBOLT
-		db SUPERSONIC
-		db SONICBOOM
-		db THUNDER_WAVE
+	db 30, SKARMORY, NO_ITEM
+		db WING_ATTACK
+		db SPIKES
+		db SAND_ATTACK
+		db ROOST
 
-	db 35, STEELIX
+	db 35, STEELIX, GOLD_BERRY
 		db SCREECH
-		db SUNNY_DAY
+		db HARDEN
 		db ROCK_THROW
 		db IRON_TAIL
 
@@ -217,17 +217,17 @@ ChuckGroup:
 
 	; CHUCK (1)
 	db "CHUCK@"
-	db TRAINERTYPE_MOVES
+	db TRAINERTYPE_ITEM_MOVES
 
 	; party
 
-	db 27, PRIMEAPE
-		db LEER
-		db RAGE
-		db KARATE_CHOP
-		db FURY_SWIPES
+	db 27, HITMONTOP, NO_ITEM
+		db RAPID_SPIN
+		db QUICK_ATTACK
+		db COUNTER
+		db TRIPLE_KICK
 
-	db 30, POLIWRATH
+	db 30, POLIWRATH, GOLD_BERRY
 		db HYPNOSIS
 		db MIND_READER
 		db SURF
@@ -245,29 +245,29 @@ ClairGroup:
 
 	; CLAIR (1)
 	db "CLAIR@"
-	db TRAINERTYPE_MOVES
+	db TRAINERTYPE_ITEM_MOVES
 
 	; party
 
-	db 37, DRAGONAIR
+	db 37, DRAGONAIR, NO_ITEM
+		db RAIN_DANCE
+		db THUNDER
+		db ICE_BEAM
 		db THUNDER_WAVE
-		db SURF
-		db SLAM
-		db DRAGONBREATH
 
-	db 37, DRAGONAIR
+	db 37, DRAGONAIR, NO_ITEM
 		db THUNDER_WAVE
 		db THUNDERBOLT
-		db SLAM
-		db DRAGONBREATH
-
-	db 37, DRAGONAIR
-		db THUNDER_WAVE
 		db ICE_BEAM
-		db SLAM
 		db DRAGONBREATH
 
-	db 40, KINGDRA
+	db 37, DRAGONAIR, MINT_BERRY
+		db HYPER_BEAM
+		db DOUBLE_TEAM
+		db REST
+		db THUNDER_WAVE
+
+	db 40, KINGDRA, GOLD_BERRY
 		db SMOKESCREEN
 		db SURF
 		db HYPER_BEAM
@@ -321,8 +321,8 @@ Rival1Group:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 12, GASTLY
-	db 14, ZUBAT
+	db 12, MISDREAVUS
+	db 14, MURKROW
 	db 16, BAYLEEF
 
 	db $ff ; end
@@ -334,8 +334,8 @@ Rival1Group:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 12, GASTLY
-	db 14, ZUBAT
+	db 12, MISDREAVUS
+	db 14, MURKROW
 	db 16, QUILAVA
 
 	db $ff ; end
@@ -347,8 +347,8 @@ Rival1Group:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 12, GASTLY
-	db 14, ZUBAT
+	db 12, MISDREAVUS
+	db 14, MURKROW
 	db 16, CROCONAW
 
 	db $ff ; end
@@ -361,8 +361,8 @@ Rival1Group:
 
 	; party
 
-	db 20, HAUNTER
-		db LICK
+	db 20, MISDREAVUS
+		db CONFUSION
 		db SPITE
 		db MEAN_LOOK
 		db CURSE
@@ -373,17 +373,17 @@ Rival1Group:
 		db SUPERSONIC
 		db SONICBOOM
 
-	db 20, ZUBAT
-		db LEECH_LIFE
-		db SUPERSONIC
-		db BITE
-		db CONFUSE_RAY
+	db 20, MURKROW
+		db PECK
+		db PURSUIT
+		db HAZE
+		db TOXIC
 
 	db 22, BAYLEEF
 		db GROWL
 		db REFLECT
-		db RAZOR_LEAF
-		db POISONPOWDER
+		db ABSORB
+		db LEECH_SEED
 
 	db $ff ; end
 
@@ -395,8 +395,8 @@ Rival1Group:
 
 	; party
 
-	db 20, HAUNTER
-		db LICK
+	db 20, MISDREAVUS
+		db CONFUSION
 		db SPITE
 		db MEAN_LOOK
 		db CURSE
@@ -407,11 +407,11 @@ Rival1Group:
 		db SUPERSONIC
 		db SONICBOOM
 
-	db 20, ZUBAT
-		db LEECH_LIFE
-		db SUPERSONIC
-		db BITE
-		db CONFUSE_RAY
+	db 20, MURKROW
+		db PECK
+		db PURSUIT
+		db HAZE
+		db TOXIC
 
 	db 22, QUILAVA
 		db LEER
@@ -429,8 +429,8 @@ Rival1Group:
 
 	; party
 
-	db 20, HAUNTER
-		db LICK
+	db 20, MISDREAVUS
+		db CONFUSION
 		db SPITE
 		db MEAN_LOOK
 		db CURSE
@@ -441,16 +441,16 @@ Rival1Group:
 		db SUPERSONIC
 		db SONICBOOM
 
-	db 20, ZUBAT
-		db LEECH_LIFE
-		db SUPERSONIC
-		db BITE
-		db CONFUSE_RAY
+	db 20, MURKROW
+		db PECK
+		db PURSUIT
+		db HAZE
+		db TOXIC
 
 	db 22, CROCONAW
 		db LEER
 		db RAGE
-		db WATER_GUN
+		db AQUA_JET
 		db BITE
 
 	db $ff ; end
@@ -463,11 +463,11 @@ Rival1Group:
 
 	; party
 
-	db 30, GOLBAT
-		db LEECH_LIFE
-		db BITE
-		db CONFUSE_RAY
-		db WING_ATTACK
+	db 30, MURKROW
+		db FAINT_ATTACK
+		db NIGHT_SHADE
+		db PECK
+		db TOXIC
 
 	db 28, MAGNEMITE
 		db TACKLE
@@ -475,8 +475,8 @@ Rival1Group:
 		db SONICBOOM
 		db THUNDER_WAVE
 
-	db 30, HAUNTER
-		db LICK
+	db 30, MISDREAVUS
+		db CONFUSION
 		db MEAN_LOOK
 		db CURSE
 		db SHADOW_BALL
@@ -484,13 +484,13 @@ Rival1Group:
 	db 32, SNEASEL
 		db LEER
 		db QUICK_ATTACK
-		db SCREECH
+		db ICE_PUNCH
 		db FAINT_ATTACK
 
 	db 32, MEGANIUM
 		db REFLECT
-		db RAZOR_LEAF
-		db POISONPOWDER
+		db MEGA_DRAIN
+		db LEECH_SEED
 		db BODY_SLAM
 
 	db $ff ; end
@@ -503,11 +503,11 @@ Rival1Group:
 
 	; party
 
-	db 30, GOLBAT
-		db LEECH_LIFE
-		db BITE
-		db CONFUSE_RAY
-		db WING_ATTACK
+	db 30, MURKROW
+		db FAINT_ATTACK
+		db NIGHT_SHADE
+		db PECK
+		db TOXIC
 
 	db 28, MAGNEMITE
 		db TACKLE
@@ -515,8 +515,8 @@ Rival1Group:
 		db SONICBOOM
 		db THUNDER_WAVE
 
-	db 30, HAUNTER
-		db LICK
+	db 30, MISDREAVUS
+		db CONFUSION
 		db MEAN_LOOK
 		db CURSE
 		db SHADOW_BALL
@@ -524,12 +524,12 @@ Rival1Group:
 	db 32, SNEASEL
 		db LEER
 		db QUICK_ATTACK
-		db SCREECH
+		db ICE_PUNCH
 		db FAINT_ATTACK
 
 	db 32, QUILAVA
 		db SMOKESCREEN
-		db EMBER
+		db ROLLOUT
 		db QUICK_ATTACK
 		db FLAME_WHEEL
 
@@ -543,11 +543,11 @@ Rival1Group:
 
 	; party
 
-	db 30, GOLBAT
-		db LEECH_LIFE
-		db BITE
-		db CONFUSE_RAY
-		db WING_ATTACK
+	db 30, MURKROW
+		db FAINT_ATTACK
+		db NIGHT_SHADE
+		db PECK
+		db TOXIC
 
 	db 28, MAGNEMITE
 		db TACKLE
@@ -555,8 +555,8 @@ Rival1Group:
 		db SONICBOOM
 		db THUNDER_WAVE
 
-	db 30, HAUNTER
-		db LICK
+	db 30, MISDREAVUS
+		db CONFUSION
 		db MEAN_LOOK
 		db CURSE
 		db SHADOW_BALL
@@ -564,12 +564,12 @@ Rival1Group:
 	db 32, SNEASEL
 		db LEER
 		db QUICK_ATTACK
-		db SCREECH
+		db ICE_PUNCH
 		db FAINT_ATTACK
 
 	db 32, FERALIGATR
 		db RAGE
-		db WATER_GUN
+		db AQUA_JET
 		db BITE
 		db SCARY_FACE
 
@@ -587,25 +587,25 @@ Rival1Group:
 		db QUICK_ATTACK
 		db SCREECH
 		db FAINT_ATTACK
-		db FURY_CUTTER
+		db ICE_PUNCH
 
-	db 36, GOLBAT
-		db LEECH_LIFE
-		db BITE
-		db CONFUSE_RAY
+	db 36, MURKROW
+		db FAINT_ATTACK
+		db NIGHT_SHADE
 		db WING_ATTACK
+		db TOXIC
 
 	db 35, MAGNETON
-		db THUNDERSHOCK
+		db THUNDERBOLT
 		db SONICBOOM
 		db THUNDER_WAVE
 		db SWIFT
 
-	db 35, HAUNTER
+	db 35, MISDREAVUS
 		db MEAN_LOOK
 		db CURSE
 		db SHADOW_BALL
-		db CONFUSE_RAY
+		db PSYBEAM
 
 	db 35, KADABRA
 		db DISABLE
@@ -615,8 +615,8 @@ Rival1Group:
 
 	db 38, MEGANIUM
 		db REFLECT
-		db RAZOR_LEAF
-		db POISONPOWDER
+		db MEGA_DRAIN
+		db LEECH_SEED
 		db BODY_SLAM
 
 	db $ff ; end
@@ -633,25 +633,25 @@ Rival1Group:
 		db QUICK_ATTACK
 		db SCREECH
 		db FAINT_ATTACK
-		db FURY_CUTTER
+		db ICE_PUNCH
 
-	db 36, GOLBAT
-		db LEECH_LIFE
-		db BITE
-		db CONFUSE_RAY
+	db 36, MURKROW
+		db FAINT_ATTACK
+		db NIGHT_SHADE
 		db WING_ATTACK
+		db TOXIC
 
 	db 35, MAGNETON
-		db THUNDERSHOCK
+		db THUNDERBOLT
 		db SONICBOOM
 		db THUNDER_WAVE
 		db SWIFT
 
-	db 35, HAUNTER
+	db 35, MISDREAVUS
 		db MEAN_LOOK
 		db CURSE
 		db SHADOW_BALL
-		db CONFUSE_RAY
+		db PSYBEAM
 
 	db 35, KADABRA
 		db DISABLE
@@ -661,7 +661,7 @@ Rival1Group:
 
 	db 38, TYPHLOSION
 		db SMOKESCREEN
-		db EMBER
+		db ROLLOUT
 		db QUICK_ATTACK
 		db FLAME_WHEEL
 
@@ -679,25 +679,25 @@ Rival1Group:
 		db QUICK_ATTACK
 		db SCREECH
 		db FAINT_ATTACK
-		db FURY_CUTTER
+		db ICE_PUNCH
 
-	db 36, GOLBAT
-		db LEECH_LIFE
-		db BITE
-		db CONFUSE_RAY
+	db 36, MURKROW
+		db FAINT_ATTACK
+		db NIGHT_SHADE
 		db WING_ATTACK
+		db TOXIC
 
-	db 34, MAGNETON
-		db THUNDERSHOCK
+	db 35, MAGNETON
+		db THUNDERBOLT
 		db SONICBOOM
 		db THUNDER_WAVE
 		db SWIFT
 
-	db 35, HAUNTER
+	db 35, MISDREAVUS
 		db MEAN_LOOK
 		db CURSE
 		db SHADOW_BALL
-		db CONFUSE_RAY
+		db PSYBEAM
 
 	db 35, KADABRA
 		db DISABLE
@@ -707,9 +707,9 @@ Rival1Group:
 
 	db 38, FERALIGATR
 		db RAGE
-		db WATER_GUN
+		db AQUA_JET
 		db SCARY_FACE
-		db SLASH
+		db CRUNCH
 
 	db $ff ; end
 
@@ -733,28 +733,28 @@ WillGroup:
 
 	; party
 
-	db 40, XATU
-		db QUICK_ATTACK
-		db FUTURE_SIGHT
-		db CONFUSE_RAY
+	db 40, GIRAFARIG
+		db AGILITY
+		db BATON_PASS
+		db STOMP
 		db PSYCHIC_M
 
-	db 41, JYNX
-		db DOUBLESLAP
-		db LOVELY_KISS
-		db ICE_PUNCH
+	db 41, ESPEON
+		db SAND_ATTACK
+		db MORNING_SUN
+		db SHADOW_BALL
 		db PSYCHIC_M
 
-	db 41, EXEGGUTOR
-		db REFLECT
-		db LEECH_SEED
-		db EGG_BOMB
-		db PSYCHIC_M
+	db 41, WOBBUFFET
+		db COUNTER
+		db MIRROR_COAT
+		db SAFEGUARD
+		db DESTINY_BOND
 
-	db 41, SLOWBRO
+	db 41, SLOWKING
 		db CURSE
 		db AMNESIA
-		db BODY_SLAM
+		db SURF
 		db PSYCHIC_M
 
 	db 42, XATU
@@ -842,7 +842,7 @@ BrunoGroup:
 		db FIRE_PUNCH
 		db MACH_PUNCH
 
-	db 43, ONIX
+	db 43, STEELIX
 		db BIND
 		db EARTHQUAKE
 		db SANDSTORM
@@ -876,27 +876,27 @@ KarenGroup:
 		db FAINT_ATTACK
 		db MEAN_LOOK
 
-	db 42, VILEPLUME
-		db STUN_SPORE
-		db ACID
-		db MOONLIGHT
-		db PETAL_DANCE
+	db 42, SNEASEL
+		db FAINT_ATTACK
+		db ICE_PUNCH
+		db SLASH
+		db IRON_TAIL
 
 	db 45, GENGAR
-		db LICK
+		db SHADOW_BALL
 		db SPITE
 		db CURSE
 		db DESTINY_BOND
 
 	db 44, MURKROW
-		db QUICK_ATTACK
+		db TOXIC
 		db WHIRLWIND
-		db PURSUIT
+		db WING_ATTACK
 		db FAINT_ATTACK
 
 	db 47, HOUNDOOM
 		db ROAR
-		db PURSUIT
+		db SUNNY_DAY
 		db FLAMETHROWER
 		db CRUNCH
 
@@ -922,10 +922,10 @@ KogaGroup:
 		db BATON_PASS
 		db GIGA_DRAIN
 
-	db 41, VENOMOTH
-		db SUPERSONIC
-		db GUST
-		db PSYCHIC_M
+	db 41, NIDOQUEEN
+		db THUNDERBOLT
+		db ICE_BEAM
+		db SURF
 		db TOXIC
 
 	db 43, FORRETRESS
@@ -934,10 +934,10 @@ KogaGroup:
 		db EXPLOSION
 		db SPIKES
 
-	db 42, MUK
-		db MINIMIZE
-		db ACID_ARMOR
-		db SLUDGE_BOMB
+	db 42, NIDOKING
+		db MEGAHORN
+		db EARTHQUAKE
+		db THRASH
 		db TOXIC
 
 	db 44, CROBAT
@@ -963,21 +963,21 @@ ChampionGroup:
 	; party
 
 	db 44, GYARADOS
-		db FLAIL
-		db RAIN_DANCE
-		db SURF
+		db DRAGON_DANCE
+		db WATERFALL
+		db BITE
 		db HYPER_BEAM
 
 	db 47, DRAGONITE
 		db THUNDER_WAVE
-		db TWISTER
+		db RAIN_DANCE
 		db THUNDER
 		db HYPER_BEAM
 
 	db 47, DRAGONITE
 		db THUNDER_WAVE
-		db TWISTER
-		db BLIZZARD
+		db ICE_BEAM
+		db THUNDERBOLT
 		db HYPER_BEAM
 
 	db 46, AERODACTYL
@@ -988,14 +988,14 @@ ChampionGroup:
 
 	db 46, CHARIZARD
 		db FLAMETHROWER
-		db WING_ATTACK
-		db SLASH
+		db AIR_SLASH
+		db ROOST
 		db HYPER_BEAM
 
 	db 50, DRAGONITE
-		db FIRE_BLAST
-		db SAFEGUARD
+		db DRAGON_DANCE
 		db OUTRAGE
+		db EARTHQUAKE
 		db HYPER_BEAM
 
 	db $ff ; end
