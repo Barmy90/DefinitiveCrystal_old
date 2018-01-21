@@ -772,17 +772,18 @@ GrowlitheEvosAttacks:
 	db 18, LEER
 	db 26, TAKE_DOWN
 	db 34, FLAME_WHEEL
-	db 42, AGILITY
-	db 50, FLAMETHROWER
+	db 39, CRUNCH
+	db 50, FLARE_BLITZ
 	db 0 ; no more level-up moves
 
 ArcanineEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ROAR
-	db 1, LEER
+	db 1, EXTREMESPEED
 	db 1, TAKE_DOWN
 	db 1, FLAME_WHEEL
-	db 50, EXTREMESPEED
+	db 42, CRUNCH
+	db 50, FLARE_BLITZ
 	db 0 ; no more level-up moves
 
 PoliwagEvosAttacks:
@@ -1091,8 +1092,8 @@ MagnemiteEvosAttacks:
 	db 16, SONICBOOM
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
-	db 33, SWIFT
-	db 39, SCREECH
+	db 33, THUNDERBOLT
+	db 39, FLASH_CANNON
 	db 45, ZAP_CANNON
 	db 0 ; no more level-up moves
 
@@ -1108,11 +1109,11 @@ MagnetonEvosAttacks:
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
 if _CRYSTAL
-	db 35, TRI_ATTACK
+	db 35, THUNDERBOLT
 else
 	db 35, SWIFT
 endc
-	db 43, SCREECH
+	db 43, FLASH_CANNON
 	db 53, ZAP_CANNON
 	db 0 ; no more level-up moves
 
