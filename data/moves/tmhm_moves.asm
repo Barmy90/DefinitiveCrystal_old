@@ -30,7 +30,7 @@ TMHMMoves: ; 1167a
 	db DIG
 	db PSYCHIC_M
 	db SHADOW_BALL
-	db MUD_SLAP
+	db ROOST
 	db DOUBLE_TEAM
 	db ICE_PUNCH
 	db SWAGGER
