@@ -124,7 +124,7 @@ Moves: ; 41afb
 	move CONFUSE_RAY,  EFFECT_CONFUSE,             0, GHOST,    100, 10,   0, STATUS
 	move WITHDRAW,     EFFECT_DEFENSE_UP,          0, WATER,    100, 40,   0, STATUS
 	move DEFENSE_CURL, EFFECT_DEFENSE_CURL,        0, NORMAL,   100, 40,   0, STATUS
-	move XSCISSOR,    EFFECT_NORMAL_HIT,         80, BUG,      100, 15,   0, PHYSICAL
+	move XSCISSOR,     EFFECT_NORMAL_HIT,         80, BUG,      100, 15,   0, PHYSICAL
 	move LIGHT_SCREEN, EFFECT_LIGHT_SCREEN,        0, PSYCHIC,  100, 30,   0, STATUS
 	move HAZE,         EFFECT_RESET_STATS,         0, ICE,      100, 30,   0, STATUS
 	move REFLECT,      EFFECT_REFLECT,             0, PSYCHIC,  100, 20,   0, STATUS
